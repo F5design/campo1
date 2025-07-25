@@ -23,7 +23,7 @@
     }
 
     body {
-      padding-top: 100px;
+      padding-top: 140px;
       font-family: 'Outfit', sans-serif;
       background-color: var(--background);
       color: var(--text-dark);
@@ -216,6 +216,63 @@
     .whatsapp-button:hover {
       background-color: #1ebd5a;
     }
+  
+    nav a img {
+      filter: brightness(0) saturate(100%) invert(19%) sepia(57%) saturate(747%) hue-rotate(232deg) brightness(91%) contrast(94%);
+      transition: transform 0.3s;
+    }
+
+    nav a img:hover {
+      transform: scale(1.2);
+    }
+
+  
+    nav.main-nav {
+      background-color: var(--accent);
+      padding: 10px 30px;
+      font-weight: 600;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #4c2573;
+    }
+
+    .social-icons a {
+      margin-left: 15px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) saturate(100%) invert(19%) sepia(57%) saturate(747%) hue-rotate(232deg) brightness(91%) contrast(94%);
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
   </style>
  </head>
  <body>
@@ -225,17 +282,27 @@
      <img alt="Logo GioTech" src="logo.png"/>
     </a>
    </div>
-   <nav>
-    <a href="#servicios">
-     Servicios
-    </a>
-    <a href="#nosotros">
-     Sobre Nosotros
-    </a>
-    <a href="#contacto">
-     Contacto
-    </a>
-   </nav>
+   
+
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@giotechtenerife?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+      <a href="https://www.instagram.com/giotechtenerife/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</nav>
+
+
   </header>
   <section class="hero">
    <h2>
